@@ -5,100 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J'S Restaurant & Lounge</title>
     <style>
+        /* Global Styles */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: #000000;
-            color: white;
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
+            height: 100vh;
+            overflow: hidden;
         }
+
+        /* Main Container with Layered Frame */
         .container {
             text-align: center;
             width: 90%;
-            max-width: 320px;
-            padding: 15px;
-            background-color: #1c1c1c;
-            border-radius: 12px;
-            box-shadow: 0 0 0 2px #555555, 0 8px 20px rgba(0, 0, 0, 0.8);
+            max-width: 400px;
+            padding: 20px;
+            background-color: #1a1a1a; /* Darker background for inner frame */
+            border-radius: 15px;
+            box-shadow: 
+                0 0 0 2px #333333, /* Inner frame layer */
+                0 10px 30px rgba(0, 0, 0, 0.6); /* Outer shadow */
         }
+
+        /* Title Styles */
         h1 {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
-            color: #ff6666;
+            color: #ff0000; /* Logo red color */
             text-transform: uppercase;
-            margin-bottom: 12px;
-            letter-spacing: 1.8px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
         }
+
+        /* Logo Styles */
         .logo img {
-            max-width: 100px;
-            margin: 8px auto;
+            max-width: 120px;
+            margin: 10px auto;
+            animation: float 4s ease-in-out infinite;
         }
-        p {
-            font-size: 12px;
-            color: #eeeeee;
-            margin-bottom: 16px;
-        }
-        .link {
-            display: block;
-            background-color: #252525;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 8px 0;
-            font-size: 14px;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            transition: all 0.3s ease;
-            border-radius: 6px;
-        }
-        .link:hover {
-            background-color: #ff3333;
-            color: #000000;
-            transform: translateY(-2px) scale(1.03);
-            box-shadow: 0 6px 18px rgba(255, 51, 51, 0.7);
-        }
-        .review-link {
-            background-color: #ff6666;
-            color: #ffffff;
-            border: 2px solid #ff3333;
-            animation: pulse 2s infinite;
-        }
-        .review-link:hover {
-            background-color: #ffffff;
-            color: #ff3333;
-            border-color: #ff6666;
-            transform: translateY(-3px) scale(1.05);
-        }
-        @keyframes pulse {
+
+        @keyframes float {
             0%, 100% {
-                box-shadow: 0 0 10px rgba(255, 102, 102, 0.7);
+                transform: translateY(0);
             }
             50% {
-                box-shadow: 0 0 20px rgba(255, 102, 102, 1);
+                transform: translateY(-8px);
             }
         }
+
+        /* Intro Text */
+        p {
+            font-size: 14px;
+            color: #dddddd;
+            margin-bottom: 20px;
+        }
+
+        /* Link Styles */
+        .link {
+            display: block;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .link:hover {
+            background-color: #ff0000;
+            color: #000000;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+        }
+
+        /* Footer */
         footer {
-            margin-top: 12px;
-            font-size: 10px;
+            margin-top: 15px;
+            font-size: 12px;
             color: #bbbbbb;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Title -->
         <h1>J'S Restaurant & Lounge</h1>
         
+        <!-- Logo -->
         <div class="logo">
             <img src="https://www.js-restaurant.com/wp-content/uploads/2024/06/logo-js.svg" alt="J'S Restaurant & Lounge Logo">
         </div>
 
+        <!-- Intro Text -->
         <p>
             Discover the luxury of J'S Restaurant & Lounge. Indulge in exceptional cuisine and a breathtaking beachfront experience. Get to know us better through our platforms and reserve your table today.
         </p>
@@ -106,13 +115,15 @@
         <!-- Links -->
         <a href="https://www.js-restaurant.com/" target="_blank" class="link">Website - Book Now</a>
         <a href="https://www.instagram.com/js.restaurant.lounge?igsh=NjlyNm02dmNkZHgzJ’S" target="_blank" class="link">Instagram</a>
-        <a href="https://g.co/kgs/kEBtwia" target="_blank" class="link">Google Maps</a>
+        <a href="https://g.co/kgs/Gcmu7EM" target="_blank" class="link">Google Maps</a>
         <a href="https://www.tripadvisor.com/Restaurant_Review-g1179396-d25787825-Reviews-J_s_Restaurant_Lounge-Bophut_Ko_Samui_Surat_Thani_Province.html" target="_blank" class="link">TripAdvisor Reviews</a>
         <a href="https://www.facebook.com/JS.restaurant.lounge?mibextid=ZbWKwL" target="_blank" class="link">Facebook</a>
 
-        <!-- New Google Review Link -->
-        <a href="https://g.co/kgs/kEBtwia" target="_blank" class="link review-link">Leave a Review - Get a Free Drink</a>
+        <!-- Feedback System -->
+        <a href="feedback_form.html" target="_blank" class="link">Leave a Review</a>
+        <a href="Updated_Terms_and_Conditions.html" target="_blank" class="link">Terms and Conditions</a>
 
+        <!-- Footer -->
         <footer>© 2024 J'S Restaurant & Lounge. Your perfect beachfront dining destination.</footer>
     </div>
 </body>
