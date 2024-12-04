@@ -11,9 +11,36 @@
             background-color: #f7f7f7;
             padding: 20px;
         }
+
         h1 {
             color: #ff6a6a;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
+
+        .promotion-frame {
+            background: linear-gradient(135deg, #ff6a6a, #e05a5a);
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .promotion-frame h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .promotion-frame p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
         .link {
             background-color: #ff6a6a;
             color: white;
@@ -23,25 +50,50 @@
             text-decoration: none;
             display: inline-block;
             width: 200px;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
+
         .link:hover {
             background-color: #e05a5a;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .social-links a:hover {
+            color: #ff6a6a;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to My Linktree!</h1>
-    
-    <!-- Google Reviews link -->
-    <a href="https://www.google.com/search?q=YOUR_BUSINESS_NAME+reviews" class="link">Leave a Review</a>
 
-    <!-- Confirmation page link -->
+    <!-- Review Promotion Section -->
+    <div class="promotion-frame">
+        <h2>🎉 Leave a Review & Get a Free Drink! 🍹</h2>
+        <p>We appreciate your feedback! Leave us a review and claim your <strong>FREE drink worth 280 Baht</strong> at J'S Restaurant.</p>
+        <a href="https://www.google.com/search?q=YOUR_BUSINESS_NAME+reviews" class="link">Leave a Review</a>
+    </div>
+
+    <!-- Claim Coupon Section -->
     <a href="http://yourusername.github.io/yourrepository/confirm_review.html" class="link">Claim Your Coupon</a>
 
-    <!-- Additional links if needed -->
-    <a href="https://www.instagram.com/jsrestaurant" class="link">Instagram</a>
-    <a href="https://www.facebook.com/jsrestaurant" class="link">Facebook</a>
-    <a href="http://yourwebsite.com/book-a-table" class="link">Book a Table</a>
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/jsrestaurant">Instagram</a>
+        <a href="https://www.facebook.com/jsrestaurant">Facebook</a>
+    </div>
 
+    <!-- Book a Table Link -->
+    <a href="http://yourwebsite.com/book-a-table" class="link">Book a Table</a>
 </body>
 </html>
