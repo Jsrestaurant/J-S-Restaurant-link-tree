@@ -11,6 +11,7 @@
             background-color: #000000; /* Black background */
             color: white;
             padding: 20px;
+            margin: 0;
         }
 
         h1 {
@@ -19,9 +20,9 @@
             margin-bottom: 20px;
         }
 
-        /* Frame for the "Get a Free Drink" promotion (highlighted in red) */
+        /* Promotion frame with a different color (Red) */
         .promotion-frame {
-            background-color: #ff6a6a; /* Red background for the promotion */
+            background-color: #ff6a6a; /* Red background */
             color: white;
             padding: 20px;
             margin-bottom: 30px;
@@ -34,7 +35,7 @@
         }
 
         .promotion-frame h2 {
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 10px;
         }
 
@@ -74,6 +75,25 @@
         .social-links a:hover {
             color: #ff6a6a;
         }
+
+        /* Make the layout responsive for mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .promotion-frame h2 {
+                font-size: 20px;
+            }
+
+            .link {
+                width: 80%; /* Make links more responsive */
+            }
+
+            .social-links a {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,14 +103,4 @@
     <div class="promotion-frame">
         <h2>🎉 Leave a Review & Get a Free Drink! 🍹</h2>
         <p>We appreciate your feedback! Leave us a review and claim your <strong>FREE drink worth 280 Baht</strong> at J'S Restaurant.</p>
-        <!-- Corrected Google Review Link -->
-        <a href="https://www.google.com/search?q=J'S+Restaurant&lrd=0x3054f1ec725329d7:0x9e96529eaa87222a,3,,,,#lrd=0x3054f1ec725329d7:0x9e96529eaa87222a" class="link">Leave a Review</a>
-    </div>
-
-    <!-- Claim Coupon Section -->
-    <a href="http://yourusername.github.io/yourrepository/confirm_review.html" class="link">Claim Your Coupon</a>
-
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://www.instagram.com/jsrestaurant">Instagram</a>
-        <a href="https://www.facebook.com/jsrestaurant">Fac
+        <!-- Corrected 
